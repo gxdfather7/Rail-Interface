@@ -1,0 +1,114 @@
+
+#bgvi2 {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed for your design */
+    text-align: center;
+    margin-top: 20px;/* Center-align the table content */
+}
+
+.json-container {
+    margin-top: 20px;
+}
+/* Style the entire table */
+.json-table {
+    max-width: 70%; /* Ensure it doesn't exceed the container width */
+    border-collapse: collapse; /* Remove table borders */
+    color: black; /* Set text color to white */
+    margin: 0 auto; /* Center-align the table horizontally */
+}
+
+/* Rest of your table styles */
+
+/* Style table headers */
+.json-table th {
+    background-color: rgba(255, 255, 255, 0); /* Make headers completely transparent */
+    padding: 5px; /* Increase the padding for header cells */
+    font-size: 14px;
+    width: 70%; /* Increase the font size for headers */
+}
+
+
+/* Style table cells */
+.json-table td {
+    padding: 10px; /* Add padding for better spacing */
+    border: none; /* Remove cell borders */
+}
+
+/* Style alternating rows with background color */
+.json-table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle background color to odd rows */
+}
+
+/* Hover effect for rows */
+.json-table tbody tr {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.json-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Add a hover background color */
+    transform: scale(1.11); /* Zoom in the hovered row */
+}
+/* Add more styles as needed */
+#search-container {
+    padding: 2px;
+    border: navajowhite;
+    border-radius: 20px; /* Set the border-radius for rounded corners */
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    flex: 2; /* Set the background color here */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+
+}
+.text-white {
+    color: white; /* Set text color to white */
+}
+
+/* Style the main title */
+.title-font {
+    font-size: 1.5rem; /* Increase the font size for better readability */
+    font-weight: bold; /* Emphasize the title */
+    margin-bottom: 1rem; /* Add spacing below the title */
+}
+
+/* Style the main description */
+.leading-relaxed {
+    font-size: 1.25rem; /* Increase the font size for better readability */
+    line-height: 1.2; /* Improve line spacing for legibility */
+    margin-bottom: 0.7rem; /* Add more spacing below the description */
+}
+
+::selection {
+    background-color: transparent; /* Set the background color to transparent */
+    color: black; /* Set the text color to black */
+    border: 20px solid black; /* Add a black border */
+    padding: 2px; /* Adjust padding as needed */
+}
+#search-input::placeholder {
+    text-align: center;
+    color: #112A46;
+    font-size: 18px; /* Center-align the placeholder text */
+}
+
+#search-input {
+    padding: 13px;
+    border: none;
+    border-radius: 28px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Set the font style to italic */
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.2); /* Make it transparent */
+    color: black;
+}

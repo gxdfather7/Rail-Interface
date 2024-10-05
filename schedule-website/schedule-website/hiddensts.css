@@ -1,0 +1,16 @@
+/* Initially hide the image */
+.hidden-image {
+    display: none;
+}
+
+/* When hovering over the "Choose" button, show the image */
+a:hover + .hidden-image {
+    display: block;
+}
+
+/* Style the image */
+.hidden-image {
+    max-width: 100%; /* Adjust the image size as needed */
+    height: auto;
+    /* Add other styles as needed, such as positioning */
+}

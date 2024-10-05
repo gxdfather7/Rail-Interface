@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Data Table</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="entry.css">
+    <header class="text-gray-600 body-font">
+
+      <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <img src="logo.jpg" alt="My Website Logo" style="width: 50px; height: 50;">
+  
+        <a href="index.html" class="ml-3 text-xl" style="font-weight: 800; color: #1e4b7a;">SMART INDIA RAIL</a>
+        </a>
+        <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+          <a href="Login.html" class="mr-5 hover:text-gray-900" style="color: white;">Login</a>
+          <a class="mr-5 hover:text-gray-900" style="color: white;">Register</a>
+          <a href="flow.html" class="mr-5 hover:text-gray-900" style="color: white;">Ask Speed</a>
+          <a href="contact.html" class="mr-5 hover:text-gray-900" style="color: white;">Contact Us</a>
+        </nav>
+        <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Check latest updates
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+</head>
+<body>
+  <video autoplay loop muted id="bgvi">
+    <source src="bgchoose.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <section class="text-gray-600 body-font">
+
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white text-shadow">Stations</h1>
+        <p class="mb-8 leading-relaxed text-white text-shadow">At the heart of the sprawling railway network, stations emerge as vibrant hubs where lives converge and diverge. They are the crossroads of destinies, where fleeting moments and lasting memories find their platform. Here, in the ceaseless rhythm of arrivals and departures, the essence of travel and the human spirit intersect, painting an ever-evolving canvas of experiences.</p>
+        <p class="mb-8 leading-relaxed text-white text-shadow search-prompt">What Station are you looking for?</p>
+          <div id="search-container">
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="table-container">
+    <div id="json-container">
+        <!-- JSON data will be displayed here as a table -->
+    </div>
+  </div>
+  
+
+    <script src="s.js"></script>
+</body>
+</html>

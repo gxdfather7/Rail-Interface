@@ -1,0 +1,286 @@
+
+#preloader{
+    background: #000 url(pre1.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.bv{
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+}
+@media( min-aspect-ratio: 16/9){
+    .bv{
+        width:100%;
+        height:auto;
+    }
+}
+
+.very-bold-text {
+    font-weight: bold;
+  }
+.white-text {
+    color: white;
+}
+footer{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    min-height: 120px;
+    padding: 20px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+footer .social_icon,
+footer .menu{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+footer .social_icon li,
+footer .menu li{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline_block;
+    transition: 0.5s;
+}
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+}
+footer .menu li a{
+    font-size: 1.   2em;
+    color: #fff;
+    margin: 0 10px;
+    display: inline_block;
+    text-decoration: none;
+}
+footer .menu li a:hover{
+    opacity:1;
+}
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed for your design */
+    text-align: center; /* Center-align the table content */
+}
+
+/* Style the entire table */
+.json-table {
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    border-collapse: collapse; /* Remove table borders */
+    color: white; /* Set text color to white */
+    margin: 0 auto; /* Center-align the table horizontally */
+}
+
+/* Rest of your table styles */
+
+/* Style table headers */
+.json-table th {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background color to headers */
+}
+
+/* Style table cells */
+.json-table td {
+    padding: 10px; /* Add padding for better spacing */
+    border: none; /* Remove cell borders */
+}
+
+/* Style alternating rows with background color */
+.json-table tbody tr:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle background color to odd rows */
+}
+
+/* Hover effect for rows */
+.json-table tbody tr {
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+.json-table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Add a hover background color */
+    transform: scale(1.11); /* Zoom in the hovered row */
+}
+
+/* Add more styles as needed */
+#search-container {
+    padding: 2px;
+    border: navajowhite;
+    border-radius: 20px; /* Set the border-radius for rounded corners */
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    flex: 2; /* Set the background color here */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+/* Style the video element */
+#bgvi {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+#bgvi3 {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.text-white {
+    color: white; /* Set text color to white */
+}
+
+/* Style the main title */
+.title-font {
+    font-size: 1.5rem; /* Increase the font size for better readability */
+    font-weight: bold; /* Emphasize the title */
+    margin-bottom: 0.2rem; /* Add spacing below the title */
+}
+
+/* Style the main description */
+.leading-relaxed {
+    font-size: 1.25rem; /* Increase the font size for better readability */
+    line-height: 1.2; /* Improve line spacing for legibility */
+    margin-bottom: 0.7rem; /* Add more spacing below the description */
+}
+
+::selection {
+    background-color: transparent; /* Set the background color to transparent */
+    color: black; /* Set the text color to black */
+    border: 20px solid black; /* Add a black border */
+    padding: 2px; /* Adjust padding as needed */
+}
+#search-input::placeholder {
+    text-align: center; /* Center-align the placeholder text */
+}
+
+#search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-style: italic; /* Set the font style to italic */
+    flex: 1;
+    background-color:black;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.wrapper {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+  }
+  
+  .wrapper .static-txt {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    position: relative;
+    top: -15%;
+  }
+  
+  .dynamic-txts{
+    margin-left: 15px;
+  }
+  .wrapper .dynamic-txts {
+    margin-left: 15px;
+    height: 90px;
+    line-height: 95px;
+    overflow: hidden;
+    position: relative;
+    top: -15%; /* Adjust this value as needed */
+  }
+  
+  .dynamic-txts li {
+    list-style: none;
+    color: #FC6D6D;
+    font-size: 60px;
+    font-weight: 500;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    animation: slide 10s linear infinite; /* Adjusted the animation duration */
+  }
+  
+  .dynamic-txts li span {
+    position: relative;
+    margin: 5px 0;
+    line-height: 90px;
+  }
+  
+ 
+  
+  @keyframes slide {
+    0% {
+      top: 10px; /* Start slightly above its initial position */
+    }
+    100% {
+      top: -350px; /* Move up a bit higher */
+    }
+  }
+  
+  @keyframes typing {
+    0%, 20% {
+      left: calc(0% - 2px); /* Start from the beginning */
+    }
+    100% {
+      left: calc(100% + 30px);
+    }
+  }
+  /* Blinking cursor animation */
+  .dynamic-txts li span::before {
+    content: "|"; /* Cursor symbol */
+    animation: blinkCursor 1s infinite;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .landing {
+    background-image: url('landing.jpg'); /* Replace 'your-background-image.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: -ms-flexbox;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+  

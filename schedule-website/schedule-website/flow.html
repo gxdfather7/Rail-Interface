@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="flow.css"> <!-- Include flow.css -->
+</head>
+<body>
+    
+    <div class="w-screen h-screen bg-gray-50 flex flex-col">
+        <div class="bg-gray-800 flex justify-center p-4">
+            <span class="text-white text-bold">Speed</span>
+        </div>
+
+        <div class="w-full max-w-screen-lg flex-1 m-auto p-8 my-4 pb-20">
+            <div class="flex flex-col" id="chat-container">
+            </div>
+        </div>
+
+        <div class="fixed inset-x-0 bottom-0 bg-gray-200">
+            <form class="max-w-screen-lg m-auto w-full p-4 flex space-x-4 justify-center items-center" onsubmit="sendMessage(); return false;">
+                <input id="message" type="text" autocomplete="off" class="border rounded-md p-2 flex-1 border-gray-300" placeholder="Your message..." />
+                <button class="bg-gray-800 text-white px-4 py-2 rounded-md" id="sendButton" disabled>Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="flow.js"></script> <!-- Include flow.js -->
+</body>
+</html>

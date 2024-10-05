@@ -1,0 +1,12 @@
+{
+  "name": "schedule-website",
+  "version": "1.0.0",
+  "description": "Dry test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
